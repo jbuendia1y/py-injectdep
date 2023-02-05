@@ -12,10 +12,10 @@ Pues esta librería está hecha para proyectos pequeños que no necesiten testea
 Aquí es un ejemplo de inyección de forma global con la librería
 
 ```py
-import injectdep
+from injectdep import global_module
 
 
-@injectdep.register
+@global_module.register
 class MyDB:
     def find_all():
         return ["Jhon", "Pepe", "Carlos"]
@@ -26,14 +26,13 @@ def main(db: MyDB):
 
 
 if __name__ == "__main__":
-    injected = injectdep.inject(main)
+    injected = global_module.inject(main)
     injected()
 ```
 
 ## Puede construir su propio módulo
 
 ```py
-import injectdep
 from injectdep import Module
 
 database_module = Module()
