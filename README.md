@@ -1,10 +1,10 @@
 # Probando injection dependency
 
-Librareria para la injección de dependencias para python
+Librareria para la inyección de dependencias para python
 
 ## Porqué usarlo ?
 
-Pues esta librería está hecha para proyectos pequeños que no necesiten testear la applicación o que quieran probar la injección de dependencias
+Pues esta librería está hecha para proyectos pequeños que no necesiten testear la applicación o que quieran probar la inyección de dependencias
 
 
 ## Cómo usarlo ?
